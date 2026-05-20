@@ -25,12 +25,9 @@
               }
             ],
             "styles": [
-              "bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
-            ],
-            "scripts": [
-              "bootstrap/dist/js/bootstrap.bundle.min.js"
-            ],
+  "src/styles.css"
+],
+"scripts": [],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "security": {
