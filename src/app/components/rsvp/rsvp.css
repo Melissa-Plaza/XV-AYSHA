@@ -1,0 +1,75 @@
+.rsvp-section {
+  background-color: #8B0000;
+  color: white;
+}
+
+.rsvp-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.rsvp-desc {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95rem;
+  color: #f0d9d9;
+  max-width: 400px;
+  margin: 0 auto 2rem;
+  line-height: 1.8;
+}
+
+.rsvp-desc strong {
+  color: white;
+}
+
+.btn-confirmar {
+  display: inline-block;
+  background-color: #C9A84C;
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.3s;
+  margin-bottom: 2rem;
+}
+
+.btn-confirmar:hover {
+  opacity: 0.85;
+  color: white;
+}
+
+.rsvp-cupo {
+  margin-top: 1rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  color: #f0d9d9;
+}
+@media (max-width: 768px) {
+  .rsvp-title {
+    font-size: 1.8rem;
+  }
+
+  .rsvp-form {
+    padding: 0 1rem;
+  }
+
+  .btn-confirmar {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+.rsvp-section {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.rsvp-section.visible {
+  opacity: 1;
+}

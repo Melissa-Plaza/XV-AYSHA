@@ -1,0 +1,29 @@
+<section id="inicio" class="hero-section text-center text-white d-flex flex-column justify-content-center align-items-center">
+  <img src="/corona.jpg" class="hero-bg" alt="">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <p class="hero-subtitle" style="font-size: 3rem;">✦ BIENVENIDA REAL ✦</p>
+
+    <div class="name-container">
+      <svg viewBox="0 0 600 150" class="name-svg">
+        <defs>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+            <feMerge>
+              <feMergeNode in="coloredBlur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+        <text x="50%" y="75%" text-anchor="middle" class="svg-name" filter="url(#glow)">Aysha</text>
+      </svg>
+    </div>
+
+    <div class="hero-divider"style="font-size: 3rem;">—Mis XV Años —</div>
+
+    <div class="sparkles">
+      <span class="sparkle" *ngFor="let s of sparkles" [style.left]="s.x" [style.top]="s.y" [style.animation-delay]="s.delay">✦</span>
+    </div>
+  </div>
+</section>

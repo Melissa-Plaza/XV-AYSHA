@@ -1,0 +1,44 @@
+<div class="envelope-screen" *ngIf="!opened" (click)="openEnvelope()">
+
+  <div class="parents-info">
+    <p class="parents-names">Omar Ponce & Jenny Anchundia</p>
+    <p class="parents-msg">Con gran alegría te invitamos a celebrar</p>
+    <p class="parents-msg">los XV años de nuestra hija</p>
+    <h1 class="parents-daughter">Aysha Jarid Ponce Anchundia</h1>
+  </div>
+
+  <div class="envelope-container">
+    <div class="envelope">
+      <div class="envelope-flap"></div>
+      <div class="envelope-body">
+        <div class="envelope-seal">
+          <span>✦</span>
+        </div>
+      </div>
+    </div>
+    <p class="envelope-hint">✦ Toca el sobre para abrir la invitación ✦</p>
+  </div>
+
+</div>
+
+<div class="invitation-content" *ngIf="opened">
+  <app-hero></app-hero>
+  <app-countdown></app-countdown>
+  <app-event-details></app-event-details>
+  <app-dress-code></app-dress-code>
+  <app-rsvp></app-rsvp>
+
+  <!-- Botón música flotante -->
+  <div class="music-fab" (click)="toggleMusic()">
+    <span class="material-symbols-outlined">{{ isPlaying ? 'pause' : 'music_note' }}</span>
+  </div>
+
+  <iframe
+    id="yt-player"
+    [src]="videoUrl"
+    width="0"
+    height="0"
+    frameborder="0"
+    allow="autoplay">
+  </iframe>
+
