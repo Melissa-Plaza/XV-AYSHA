@@ -115,3 +115,33 @@
     font-size: 0.9rem;
   }
 }
+@media (max-width: 768px) {
+  .hero-subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+  }
+
+  .name-container {
+    width: 95vw;
+  }
+
+  .svg-name {
+    font-size: 3.5rem;
+  }
+
+  .hero-divider {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 400px) {
+  .svg-name {
+    font-size: 2.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+  }
+}
