@@ -10,22 +10,13 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 })
 export class EventDetails implements OnInit {
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
-
   ngOnInit() {
     if (isPlatformBrowser(this.platformId)) {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      }, { threshold: 0.2 });
-
       setTimeout(() => {
         document.querySelectorAll('.event-card, .location-card').forEach(card => {
-          observer.observe(card);
+          card.classList.add('visible');
         });
-      }, 100);
+      }, 300);
     }
   }
 }
